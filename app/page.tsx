@@ -74,22 +74,16 @@ export default function Home() {
               </SheetTrigger>
               <SheetContent side="right">
                 <nav className="grid gap-6 text-lg font-medium">
-                  <Link href="/fields" className="hover:text-blue-600">
+                  <Link href="/" className="hover:text-blue-600">
                     Fields
                   </Link>
-                  <Link href="/get-started" className="hover:text-blue-600">
+                  <Link href="/" className="hover:text-blue-600">
                     Get Started
                   </Link>
-                  <Link href="/training-hub" className="hover:text-blue-600">
-                    Training Hub
-                  </Link>
-                  <Link href="/find-my-perfect-pod" className="hover:text-blue-600">
-                    Find my perfect Athletech
-                  </Link>
-                  <Link href="/shop" className="hover:text-blue-600">
+                  <Link href="/" className="hover:text-blue-600">
                     Shop
                   </Link>
-                  <Link href="/account" className="hover:text-blue-600">
+                  <Link href="/" className="hover:text-blue-600">
                     Account
                   </Link>
                 </nav>
