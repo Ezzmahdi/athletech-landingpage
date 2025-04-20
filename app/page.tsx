@@ -10,24 +10,14 @@ import PodShowcase from "@/components/pod-showcase"
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-slate-50 selection:bg-blue-500/20 selection:text-blue-800">
-      {/* Announcement Bar */}
-      <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-violet-500 py-3 text-center text-sm font-medium text-white">
-        <div className="container flex items-center justify-center gap-2">
-          <span>Spring Sale! Get 25% OFF Sitewide</span>
-          <Link href="/shop" className="inline-flex items-center font-bold hover:underline">
-            SHOP NOW <ChevronRight className="h-4 w-4" />
-          </Link>
-        </div>
-      </div>
 
       {/* Navigation */}
       <header className="sticky top-0 z-40 border-b bg-white/90 backdrop-blur-lg supports-[backdrop-filter]:bg-white/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between mx-2 px-2">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="relative h-10 w-10 overflow-hidden rounded-full bg-gradient-to-br from-blue-500 to-violet-600">
-                <div className="absolute inset-1 rounded-full bg-white"></div>
-                <div className="absolute inset-2 rounded-full bg-gradient-to-br from-blue-500 to-violet-600"></div>
+              <div className="relative h-10 w-10 overflow-hidden rounded-full">
+                <Image src="/icon.png" alt="Athletech Logo" fill className="object-contain" />
               </div>
               <span className="text-xl font-bold tracking-tight">Athletech</span>
             </Link>

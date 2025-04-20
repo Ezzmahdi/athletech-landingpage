@@ -9,7 +9,9 @@ export const metadata: Metadata = {
   title: "Athletech Pods | Smart Reaction Training System",
   description:
     "Transform your training with Athletech Pods - the smart reaction training system designed for athletes of all levels.",
-    generator: 'v0.dev'
+  icons: {
+    icon: 'favicon.ico',
+  },
 }
 
 export default function RootLayout({
@@ -18,7 +20,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/icon.png" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
